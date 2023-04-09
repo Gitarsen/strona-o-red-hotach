@@ -1,0 +1,653 @@
+* {
+padding: 0;
+margin: 0;  
+}
+
+.section_glowna1{
+  background-image: url("images/background.jpg");
+  background-size: contain, cover;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.logo_1{
+  width: 10%;
+  height: auto;
+  cursor: cell;
+}
+
+nav{
+ display:inline-block;
+}
+
+nav ul li{
+  display:inline-block;
+  margin: 5px 20px;
+  position: relative;
+  left: 335px;
+  bottom: 100px;
+  font-size: 30px;
+  font-family: "Bangers" ;
+  color: #89C4E1;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul{
+  margin: 5px 0 0 0;
+}
+
+
+nav ul li::after{
+  background: pink;
+  content: " ";
+  width: 0%;
+  height: 2px;
+  display: block;
+  transition: 2s;
+  margin: auto;
+}
+
+nav ul li:hover{
+  color: red;
+  transition: 2s;
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.section_glowna2{
+  background-image: linear-gradient(180deg, #03001C, #301E67, #5B8FB9, #C147E9);
+  width: 100%;
+  height: 150vh;
+}
+
+.section_dyskografia1{
+  background-image: url("images/płyty_winylowe_2.jpg");
+  width: 100vw;
+  height: 35vh;
+}
+
+.section_dyskografia2{
+  background: linear-gradient(77deg, #C780FA, #B9E0FF, #E3ACF9, #86E5FF, #F3CCFF, #5BC0F8 );
+  width: auto;
+  height: 177vh; 
+}
+
+.albumy{
+  display: flex;
+  font-family: "Assistant"; 
+}
+
+.okladka{
+  height: 225px;
+  width: 225px;
+}
+
+.album{
+  height: 225px;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.napis_album{
+  color: white;
+  border: solid; 
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.tour_photo_1{
+  height: auto;
+  width: 30cm;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  position: relative;
+  top: 1cm;
+}
+
+.platforma{
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  left: 13cm;
+  margin: 80px 20px;
+}
+ 
+.section_czlonkowie1{
+  background-image: url("images/tło_1.png");
+  width: auto;
+  height: 35vh;
+}
+
+.napis_czlonkowie{
+ color: orange;
+ border: solid; 
+ text-align: center;
+ font-size: 30px;
+ padding: 10px;  
+}
+
+.section_czlonkowie2{
+ background: linear-gradient(187deg, #B5F1CC, #E5FDD1, #C9F4AA, #FCC2FC);
+ width: auto;
+ height: 920vh;
+overflow-y: hidden;
+}
+ 
+
+
+.kolaz_anthony{
+  float: left;
+  display: flex;
+  position: relative;
+  height: 18cm;
+  width: 20cm;
+  padding: 1cm;
+  top: 1cm;
+  
+}
+
+.imie_Anthony{
+  border: solid;
+  font-size: 27px;
+  right: 3cm;
+  top: 0.5cm;
+  display: inline;
+  position: relative;
+}
+
+.anthony_opis{
+  font-size: 20.2px;
+  display: inline-block;
+  position: relative;
+  margin-left: 22cm;
+  margin-right: 1cm;
+  bottom: 18cm;
+}
+
+.kolaz_john{
+  display: flex;
+  float: right;
+  position: relative;
+  height: 18cm;
+  width: 18cm;
+  padding: 1cm;
+  bottom: 12cm;
+}
+
+.imie_john{
+  border-style: solid;
+  font-size: 27px;
+  left: 18cm;
+  bottom: 13cm;
+  position: relative;
+  display: inline;
+}
+
+.john_opis{
+  font-size: 20.2px;
+  bottom: 12cm;
+  position: relative;
+  margin-left: 1cm;
+  margin-right: 1cm;
+}
+
+.albumy_john{
+  display: flex;
+  position: relative;
+  bottom: 11cm;
+}
+
+.okladka_john{
+  height: 225px;
+  width: 225px;
+}
+
+.album_john{
+  height: 225px;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 37px auto;
+  font-family: "Assistant";
+}
+
+.kolaz_flea{
+  float: left;
+  height: 18cm;
+  width: 20cm;
+  display: flex;
+  position: relative;
+  margin-left: 1cm;
+  bottom: 7cm;
+}
+
+.imie_flea{
+  display: inline-block;
+  border-style: solid;
+  position: relative; 
+  text-align: right;
+  font-size: 27px;
+  bottom: 8.5cm;
+  right: 1cm;
+}
+
+.flea_opis{
+  font-size: 20.2px;
+  position: relative;
+  margin-left: 22cm;
+  margin-right: 1cm;
+  bottom: 8cm;
+}
+
+.kolaz_chad{
+  display: flex;
+  float: right;
+  position: relative;
+  height: 18cm;
+  width: 18cm;
+  bottom: 5cm;
+  margin-right: 1cm;
+}
+
+.chad_opis{
+  font-size: 20.2px;
+  bottom: 6cm;
+  position: relative;
+  margin-left: 1cm;
+  margin-right: 20cm;
+}
+
+.imie_chad{
+  display: inline-block;
+  border-style: solid;
+  position: relative; 
+  text-align: left;
+  font-size: 27px;
+  bottom: 6.5cm;
+  left: 18.5cm;
+}
+
+.zdjecie_josh{
+  width: 17cm;
+  height: 10cm;
+  margin: 1cm;
+}
+
+.imie_josh{
+  display: inline-block;
+  border-style: solid;
+  position: relative; 
+  font-size: 27px;
+  bottom: 13cm;
+  left: 7.5cm;
+}
+
+.josh_opis{
+  font-size: 20.2px;
+  position: relative;
+  margin-right: 21cm;
+  bottom: 12cm;
+  left: 19cm;  
+  
+}
+
+.zdjecie_hilel{
+  width: 17cm;
+  height: 10cm;
+  margin: 1cm;
+  bottom: 9.5cm;
+  position: relative;
+}
+
+.imie_hilel{
+  display: inline-block;
+  border-style: solid;
+  position: relative; 
+  font-size: 27px;
+  bottom: 21.7cm;
+  right: 11cm;
+}
+
+.hilel_opis{
+  font-size: 20.2px;
+  position: relative;
+  bottom: 21cm;
+  left: 19cm;
+  margin-right: 21cm;
+}
+
+.zdjecie_dave{ 
+  width: 17cm;
+  height: 10cm;
+  margin: 1cm;
+  position: relative;
+  bottom: 19cm;
+}
+.imie_dave{
+  display: inline-block;
+  border-style: solid;
+  position: relative; 
+  font-size: 27px;
+  bottom: 31.5cm;
+  right: 11.5cm;
+}
+
+.dave_opis{
+  font-size: 20.2px;
+  position: relative;
+  bottom: 29cm;
+  left: 19cm;
+  margin-right: 21cm;
+}
+
+.zdjecie_jack{
+  width: 17cm;
+  height: 10cm;
+  margin: 1cm;
+  position: relative;
+  bottom: 25cm;
+}
+.imie_jack{
+  display: inline-block;
+  border-style: solid;
+  position: relative; 
+  font-size: 27px;
+  bottom: 37cm;
+  right: 11cm;
+}
+.jack_opis{
+  font-size: 20.2px;
+  position: relative;
+  margin-right: 21cm;
+  bottom: 34cm;
+  left: 19cm;
+}
+
+.platforma_czlonkowie{
+  display: inline-block;
+  position: relative;
+  margin: 80px 20px;
+  bottom: 31.5cm;
+  left: 13cm;
+}
+
+.section_glowna3{
+  min-width: 100%;
+  min-height: 100vh;
+  
+}
+
+.cantstop{
+  height: 100%;
+  width: 1519.2px;
+}
+
+.licznik{
+  position: relative;
+  top: 3cm;
+  font-size: 3cm;
+  left: 11cm;
+  width: 1000px;
+}
+
+.cdrk{
+  font-size: 1cm;
+  top: 2cm;
+  text-align: center;
+  position: relative;
+}
+
+.platforma_index{
+  display: inline-block;
+  position: relative;
+  margin: 80px 20px;
+  top: 6.5cm;
+  left: 13cm;
+}
+
+.section_galeria1{
+  background-image: url("images/chili_peppers.jpg");
+  width: auto;
+  height: 35vh;
+}
+
+.napis_galeria{
+  color: white;
+ border: solid; 
+ text-align: center;
+ font-size: 30px;
+ padding: 10px;  
+
+  
+}
+
+.section_galeria2{
+   background: linear-gradient(90deg, #C0EEE4, #F8F988, #FFCAC8, #FF9E9E);
+   width: auto;
+   height: 1200vh;
+}
+
+.zdjecie1{
+  position: relative;
+  height: 20cm;
+  width: auto;
+  margin: 2cm;
+}
+.zdjecie2{
+  position: relative;
+  height: 20cm;
+  width: auto;
+  margin: 2cm;
+  left: 2cm;
+  margin-top: 0.5cm;
+}
+.zdjecie3{
+  position: relative;
+  height: 15cm;
+  width: auto;
+  margin: 2cm;
+}
+
+.opis_zdjecia1{
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.zdjecie4{
+  position: relative;
+  width: 70%;
+  top: 3cm;
+  left: 6cm;
+}
+.zdjecie5{
+  position: relative;
+  width: 50%;
+  top: 20cm;
+  left: 10cm;
+}
+.zdjecie6{
+  position: relative;
+  top: 5cm;
+  right: 9cm;
+}
+
+.opis_zdjecia2{
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  top: 21.5cm;
+}
+
+.zdjecie7{
+  position: relative;
+  top: 20cm;
+  left: 1cm;
+}
+.zdjecie8{
+  position: relative;
+  top: 27cm;
+  left: 2.2cm;
+}
+.zdjecie9{
+  position: relative;
+  top: 22cm;
+  left: 3.5cm;
+  width: 20%;
+}
+
+.zdjecie10{
+  position: relative;
+  width: 20%;
+  top: 25cm;
+  left: 1cm;
+}
+
+.opis_zdjecia3{
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  top: 27cm;
+}
+
+.zdjecie11{
+  position: relative;
+  width: 30%;
+  top: 23cm;
+  left: 27.5cm;
+  height: auto;
+}
+.zdjecie12{
+  position: relative;
+  top: 23cm;
+  right: 11cm;
+  width: 30%;
+}
+.zdjecie13{
+  position: relative;
+  width: 30%;
+  top: 31.5cm;
+  height: auto;
+  right: 10cm;
+}
+.zdjecie14{
+  position: relative;
+  width: 30%;
+  top: 25cm;
+  left: 27.5cm;
+  height: auto;
+}
+
+.opis_zdjecia4{
+  position: relative;
+  top: 5cm;
+  font-size: 20px;
+  left: 0.7cm;
+  width: 1300px;
+}
+.opis_zdjecia5{
+  font-size: 20px;
+  position: relative;
+  top: 13cm;
+  left: 14.5cm;
+  margin-right: 27cm;
+}
+.opis_zdjecia6{
+  font-size: 20px;
+  position: relative;
+  top: 3.2cm;
+  left: 29.5cm;
+  width: 350px;
+}
+
+.okladka_galeria1{
+  position: relative;
+  height: 225px;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px auto;
+  top: 4cm;
+  right: 16cm;
+}
+
+.opis_zdjecia7{
+  position: relative;
+  font-size: 20px;
+  top: 16cm;
+  margin-right: 27cm;
+  left: 27.5cm;
+  width: 450px;
+}
+.opis_zdjecia8{
+  position: relative;
+  font-size: 25px;
+  top: 11cm;
+  left: 3cm;
+  width: 800px;
+}
+
+.zdjecie17{
+  position: relative;
+  left: 20cm;
+  bottom: 13cm;
+}
+.zdjecie15{
+  position: relative;
+  top: 37cm;
+  left: 3.3cm;
+}
+.zdjecie16{
+  position: relative;
+  width: 40%;
+  top: 15cm;
+  left: 1cm;
+}
+
+.opis_zdjecia9{
+  position: relative;
+  font-size: 20px;
+  bottom: 30cm;
+  left: 4.2cm;
+  width: 700px;
+}
+.opis_zdjecia10{
+  position: relative;
+  font-size: 20px;
+  bottom: 12cm;
+  left: 20.7cm;
+  width: 700px;
+}
+.opis_zdjecia11{
+  position: relative;
+  top: 11cm;
+ font-size: 25px;
+ left: 10cm;
+  width: 770px;
+}
+
+.platforma_galeria{
+  display: inline-block;
+  position: relative;
+  margin: 80px 20px;
+  top: 16.5cm;
+  left: 13cm;
+}
+
+}
